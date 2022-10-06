@@ -1,0 +1,19 @@
+.fill {
+    width: 100%;
+    background-color: #D7D7D7;
+    height: 70vh;
+}
+
+.fill-container {
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    background-color: #fff;
+    height: 500px;
+}
+
+.content.new {
+    background-color: rgb(231, 231, 231);
+}

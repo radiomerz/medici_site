@@ -1,0 +1,22 @@
+.nav {
+
+    font-family: 'Montserrat';
+    line-height: 20px;
+}
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav__item {
+    margin-right: 32px;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+.nav__link:hover, .header__link:focus, .header__link:active {
+    opacity: 0.5;
+}
