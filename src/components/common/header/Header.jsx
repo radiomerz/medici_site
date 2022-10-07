@@ -1,13 +1,22 @@
 import React from 'react';
-import MediciLogo from "../../../images/MediciLogo.svg";
-import MediciRobot from '../../../images/MediciRobot.svg'
 import {Navbar} from "../../common";
+import {MediciRobot, MediciLogo} from './../../../images';
 import './Header.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 
 const Header = () => {
+    const navListMain =[
+        {href: '#', name: 'О ПРОГРАММЕ'},
+        {href: '#', name: 'ВОЗМОЖНОСТИ'},
+        {href: '#', name: 'ЭКОСИСТЕМА'},
+        {href: '#', name: 'ТАРИФЫ'},
+        {href: '#', name: 'ОТЗЫВЫ'},
+        {href: '#', name: 'НАШИ КЛИЕНТЫ'},
+        {href: '#', name: 'О НАС'},
+        {href: '#', name: 'СВЯЗАТЬСЯ С НАМИ'},
+    ];
     return (
         <header >
             <Row>
@@ -24,7 +33,7 @@ const Header = () => {
                     <hr className="hr mt-1"></hr>
                 </Col>
             </Row>
-            <Navbar params={{id: 0, names:'1'}}/>
+            <Navbar items={navListMain}/>
         </header>
     );
 };
